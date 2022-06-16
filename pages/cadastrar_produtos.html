@@ -23,15 +23,17 @@
 
     <main>
         <form action="post" class="form">
-            <section class="form__firt-step">
-                <button><</button>
-                <div class="title-container">
-                    <div class="cadastrar">
+            <section class="form__first-step">
+                <div class="first-step__title-container">
+                    <div class="register-title">
+                        <a href="#">
+                            <img src="../imgs/ic_back.svg" class="register-title__img-back" alt="Ícone voltar para a página anterior">
+                        </a>
                         <img src="../imgs/ic_produtos.svg" alt="ícone sacola de compra">
                         <h1>Cadastrar produtos</h1>     
                     </div>
 
-                    <span>Etapa 1 de 2</span>
+                    <label class="register-title__steps">Etapa 1 de 2</label>
                 </div>
         
                 <input type="text" class="form__input-text" placeholder="Nome do produto">
@@ -46,24 +48,40 @@
                 </select>
       
                 <div class="form__container-radio">
-                    <span>Para quantas pessoas?</span>
-                    <input type="radio" name="" id="1pessoa">
-                    <label for="1pessoa">Serve 1 pessoa</label>
-                    <input type="radio" name="" id="">
-                    <label for="2pessoas">Serve 2 pessoas</label>
-                    <input type="radio" name="" id="">
-                    <label for="familia">Família - até 4 pessoas</label>
+                    <h3>Para quantas pessoas?</h3>
+
+                    <label for="1pessoa">
+                        <input type="radio" name="num-de-pessoas" id="1pessoa" class="form__input-radio">
+                        Serve 1 pessoa                    
+                    </label>
+
+                    <label for="2pessoas">
+                        <input type="radio" name="num-de-pessoas" id="2pessoas class=" class=" form__input-radio">
+                        Serve 2 pessoas
+                    </label>
+
+                    <label for="familia">
+                        <input type="radio" name="num-de-pessoas" id="familia" class="form__input-radio">
+                        Família - até 4 pessoas
+                    </label>
                 </div>
     
                 <div class="form__container-radio">
-                    <span>Para quantas pessoas?</span>
-                    <input type="radio" name="" id="produto-disponivel">
-                    <label for="1pessoa">Produto disponível</label>
-                    <input type="radio" name="" id="produto-indisponivel">
-                    <label for="2pessoas">Produto indisponível</label>
+                    <h3>Para quantas pessoas?</h3>
+                   
+                        <label for="disponivel">
+                            <input type="radio" name="disponibilidade" class="form__input-radio" id="disponivel">
+                            Produto disponível                       
+                        </label>
+
+                 
+                        <label for="indisponivel">
+                            <input type="radio" name="disponibilidade" class="form__input-radio" id="indisponivel">
+                            Produto indisponível
+                        </label>                    
                 </div>
     
-                <button disabled>Próximo</button>
+                <button class="form__btn-actions form__btn-actions--next" disabled>Próximo</button>
     
             </section>
 
@@ -75,19 +93,21 @@
                             <h1>Cadastrar produtos</h1>
                         </img>
                     </div>
-                    <span>Etapa 2 de 2</span>
+                    <label>Etapa 2 de 2</label>
                 </div>
-                <span>Selecione a foto do produto</span>
+                <h3>Selecione a foto do produto</h3>
                 <div class="form__container-uploads">
                     <input type="file" name="cover" id="">
                     <input type="file" name="secondary-image" id="">
                     <input type="file" name="secondary-image" id="">
                 </div>
-                <button disabled>Cadastrar</button>
+                <button class="form__btn-actions" disabled>Cadastrar</button>
             </section>
-        </form>
-
-        
+        </form>        
     </main>
+
+    <footer>
+        <span>2022 | Usemobile. Todos os direitos reservados </span>
+    </footer>
 </body>
 </html>
