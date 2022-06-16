@@ -1,0 +1,78 @@
+
+.second-step__title-container {
+    margin-bottom: 3rem;
+}
+
+
+.second-step__title-upload {
+    color: var( --primary-orange);
+    font-size: var(--size-17);
+    font-weight: 500;
+
+    margin-bottom: 5rem;
+}
+
+.second-step__uploads-container {
+    display: grid;
+    grid-template-areas: 
+    "first-item first-item"
+    "second-item third-item"    
+    ;
+    gap: 15px 15px;
+}
+
+.second-step__container-uploads {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+    border: 1px solid var(--primary-orange);
+    padding: 50px;
+
+    box-sizing: border-box;
+
+    background-color: var(--neutral-super-light-white);
+}
+.second-step__container-uploads p {
+    line-height: 25px;
+    text-align: center;
+
+    color: var(--neutral-gray);
+    font-size: var(--size-17);
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.second-step__container-upload--second, 
+.second-step__container-upload--third {
+    width: 25vw;
+    height: 45vh;
+    margin-top: 1.3rem;
+}
+
+.second-step__container-upload--second p ,
+.second-step__container-upload--third p {
+    font-size: var(--size-14);
+}
+
+.second-step__container-upload--first {
+    width: 50vw;
+    height: 50vh;
+    grid-area: first-item;
+}
+.second-step__container-upload--second {
+    grid-area: second-item;
+}
+.second-step__container-upload--third {
+    grid-area: third-item;
+}
+
+.second-step__container-upload img {
+    width: 10%;
+}
+
+

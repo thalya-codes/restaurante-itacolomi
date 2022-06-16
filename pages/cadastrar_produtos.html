@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/css_variables.css">
     <link rel="stylesheet" href="../css/cadastrar_produtos.css">
+    <link rel="stylesheet" href="../css/segunda_etapa_cadastrar_p.css">
     <title>Itacolomi Restaurante - Cadastrar Produto</title>
 </head>
 <body>
@@ -86,28 +87,79 @@
             </section>
 
             <section class="form__second-step">
-                <div class="title-container">
-                    <div>
-                        <button><</button>
+                <div class="second-step__title-container">
+                    <div class="register-title">
+                        <a href="#">
+                            <img src="../imgs/ic_back.svg" class="register-title__img-back" alt="Ícone voltar para a página anterior">
+                        </a>
                         <img src="../imgs/ic_produtos.svg" alt="ícone sacola de compra">
-                            <h1>Cadastrar produtos</h1>
-                        </img>
+                        <h1>Cadastrar produtos</h1>     
                     </div>
-                    <label>Etapa 2 de 2</label>
+
+                    <label class="register-title__steps">Etapa 1 de 2</label>
                 </div>
-                <h3>Selecione a foto do produto</h3>
-                <div class="form__container-uploads">
-                    <input type="file" name="cover" id="">
-                    <input type="file" name="secondary-image" id="">
-                    <input type="file" name="secondary-image" id="">
-                </div>
-                <button class="form__btn-actions" disabled>Cadastrar</button>
+        
+                <h3 class="second-step__title-upload">Selecione a foto do produto</h3>
+                <div class="second-step__uploads-container">
+                    <div class="second-step__container-upload--first 
+                    second-step__container-uploads">
+    
+                        <img src="../imgs/ic_upload.svg" alt="">
+    
+                        <p>
+                            Anexar foto do produto.
+                            <br>
+                            Se preferir arraste e solte a foto.
+                        </p>
+    
+                        <!--
+                            <input type="file" name="cover" id="" class="input-upload__first-item ">
+                        -->                     
+                    </div>
+                        
+                    <div class="second-step__container-uploads
+                        second-step__container-upload--second
+                        ">
+                            <img src="../imgs/ic_upload.svg" alt="">
+    
+                            <p>
+                                Anexar foto do produto.
+                                <br>
+                                Se preferir arraste e solte a foto.
+                            </p>
+    
+                        <!--
+                            <input type="file" name="secondary-image" id="" class="input-upload__second-item">
+                        -->
+                            
+                    </div>
+    
+                    <div class="second-step__container-uploads
+                        second-step__container-upload--third
+                        ">
+    
+                                <img src="../imgs/ic_upload.svg" alt="">
+    
+                                <p>
+                                    Anexar foto do produto.
+                                    <br>
+                                    Se preferir arraste e solte a foto.
+                                </p>
+    
+                                <!--
+                                    <input type="file" name="secondary-image" id="" class="input-upload__third-item">
+                                -->                
+                            
+                            
+                    </div>
+                </div>               
             </section>
         </form>        
+        <button class="form__btn-actions form__btn-actions--register" disabled>Cadastrar</button>
     </main>
 
     <footer>
-        <span>2022 | Usemobile. Todos os direitos reservados </span>
+        2022 | Usemobile. Todos os direitos reservados 
     </footer>
 </body>
 </html>
