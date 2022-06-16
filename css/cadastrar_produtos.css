@@ -1,0 +1,80 @@
+.header {
+    width: 100vw;
+    height: 17vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--primary-orange);
+}
+
+.header__container-title {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+}
+.header__container-title img {
+    width: 20%;
+    margin-right: 20px;
+}
+.header__container-exit {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__firt-step {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50vw;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+}
+.form__firt-step .title-container span {
+    font-size: var(--size-14);
+}
+
+.title-container .cadastrar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cadastrar img {
+    margin-right: 5px;
+}
+
+.form__input-text {
+    border-radius: 10px;
+    padding: 10px;
+
+    border: 1px var(--primary-orange) solid;
+}
+
+.form__input-text:not(:last-child) {
+    outline: none;
+}
+
+.form__input-text::placeholder, .form__input-select {
+    font-size: var(--size-14);
+}
+
+.form__input-select {
+    border: none;
+}
+
+.form__input-select option {
+    font-size: var(--size-14);
+    color: var(--primary-orange);
+}
+
+option {
+    border-bottom: 2px solid red;
+}

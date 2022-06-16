@@ -1,0 +1,20 @@
+:root {
+    --primary-orange: #F29C46;
+    --primary-terracotta: #C14D19; 
+
+    --secondary-green: #72BC54;
+
+    --neutral-black: #262626;
+    --neutral-medium-black: #292929;
+    --neutral-gray: #666666;
+    --neutral-medium-gray: #A3A3A3;
+    --neutral-light-gray: #CCCCCC;
+    --neutral-white: #ffff;
+    --neutral-super-light-white: #F5F5F5;
+    --neutral-ofwhite: #E0E0E0;
+
+    --size-20: 20px;
+    --size-17: 17px;
+    --size-14: 14px;
+    --size-12: 12px;
+}

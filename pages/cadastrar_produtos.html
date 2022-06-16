@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/css_variables.css">
+    <link rel="stylesheet" href="../css/cadastrar_produtos.css">
+    <title>Itacolomi Restaurante - Cadastrar Produto</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container-title">
+            <img src="../imgs/LOGO.svg" alt="Logotipo do restaurante | Montanha com nome do restaurante abaixo">
+            <p>Olá,Joana</p>
+        </div>
+        <div class="header__container-exit">
+            <img src="../imgs/ic_exit.svg" alt="Ícone de seta apontando para a direita">
+            <a href="#">Sair</a>
+        </div>
+    </header>
+
+    <main>
+        <form action="post" class="form">
+            <section class="form__firt-step">
+                <button><</button>
+                <div class="title-container">
+                    <div class="cadastrar">
+                        <img src="../imgs/ic_produtos.svg" alt="ícone sacola de compra">
+                        <h1>Cadastrar produtos</h1>     
+                    </div>
+
+                    <span>Etapa 1 de 2</span>
+                </div>
+        
+                <input type="text" class="form__input-text" placeholder="Nome do produto">
+                <input type="text" class="form__input-text" placeholder="Descrição">
+                <input type="number" class="form__input-text" placeholder="Valor (R$)">
+
+                <select name="Categoria" class="form__input-text form__input-select">                    <option value="prato-completo">Categoria</option>
+                    <option value="prato-completo">Prato completo</option>
+                    <option value="sobremesa">Sobremesa</option>
+                    <option value="bebida">Bebida</option>
+                    <option value="acompanhamento">Acompanhamento</option>
+                </select>
+      
+                <div class="form__container-radio">
+                    <span>Para quantas pessoas?</span>
+                    <input type="radio" name="" id="1pessoa">
+                    <label for="1pessoa">Serve 1 pessoa</label>
+                    <input type="radio" name="" id="">
+                    <label for="2pessoas">Serve 2 pessoas</label>
+                    <input type="radio" name="" id="">
+                    <label for="familia">Família - até 4 pessoas</label>
+                </div>
+    
+                <div class="form__container-radio">
+                    <span>Para quantas pessoas?</span>
+                    <input type="radio" name="" id="produto-disponivel">
+                    <label for="1pessoa">Produto disponível</label>
+                    <input type="radio" name="" id="produto-indisponivel">
+                    <label for="2pessoas">Produto indisponível</label>
+                </div>
+    
+                <button disabled>Próximo</button>
+    
+            </section>
+
+            <section class="form__second-step">
+                <div class="title-container">
+                    <div>
+                        <button><</button>
+                        <img src="../imgs/ic_produtos.svg" alt="ícone sacola de compra">
+                            <h1>Cadastrar produtos</h1>
+                        </img>
+                    </div>
+                    <span>Etapa 2 de 2</span>
+                </div>
+                <span>Selecione a foto do produto</span>
+                <div class="form__container-uploads">
+                    <input type="file" name="cover" id="">
+                    <input type="file" name="secondary-image" id="">
+                    <input type="file" name="secondary-image" id="">
+                </div>
+                <button disabled>Cadastrar</button>
+            </section>
+        </form>
+
+        
+    </main>
+</body>
+</html>
