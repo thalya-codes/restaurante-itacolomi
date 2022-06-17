@@ -8,7 +8,12 @@
 
     color: var(--neutral-black);
 }
-
+.d-flex {
+    display: flex;
+}
+.d-none {
+    display: none;
+}
 .header {
     width: 100vw;
 }

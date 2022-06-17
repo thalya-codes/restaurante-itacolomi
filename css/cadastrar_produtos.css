@@ -34,13 +34,13 @@
     align-items: center;
 }
 .form__first-step  {
-    display: none;
+    display: flex;
     justify-content: space-between;
 
     height: 100vh;
 }
-.form__second-step {
-    display: flex;
+.form__second-step , .form__btn-actions--register{
+    display: none;
 }
 .form__first-step , .form__second-step{
     flex-direction: column;
@@ -86,7 +86,6 @@
 .form__input-text:not(:last-child) {
     outline: none;
 }
-
 .form__input-text::placeholder, .form__input-select {
     font-size: var(--size-14);
 }
@@ -142,12 +141,6 @@
 .form__btn-actions:disabled {
     background: var(--neutral-medium-gray);
     color: var(--neutral-white);
-}
-
-.form__btn-actions--next {
-    position: absolute;
-    bottom: 0;
-    right: 0;
 }
 
 footer {

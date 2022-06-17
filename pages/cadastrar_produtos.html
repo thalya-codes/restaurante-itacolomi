@@ -23,8 +23,9 @@
     </header>
 
     <main>
-        <form action="post" class="form">
-            <section class="form__first-step">
+        <form class="form">
+            
+            <section class="form__first-step d-flex">
                 <div class="first-step__title-container">
                     <div class="register-title">
                         <a href="#">
@@ -37,53 +38,88 @@
                     <label class="register-title__steps">Etapa 1 de 2</label>
                 </div>
         
-                <input type="text" class="form__input-text" placeholder="Nome do produto">
-                <input type="text" class="form__input-text" placeholder="Descrição">
-                <input type="number" class="form__input-text" placeholder="Valor (R$)">
+                <input type="text" class="form__input-text" placeholder="Nome do produto" required>
+                <input type="text" class="form__input-text" placeholder="Descrição" required>
+                <input type="number" class="form__input-text" placeholder="Valor (R$)" required>
 
-                <select name="Categoria" class="form__input-text form__input-select">                    <option value="prato-completo">Categoria</option>
+                <select name="categoria" class="form__input-text form__input-select">                   
+                    <option value="prato-completo" selected disabled hidden>Categoria</option>
                     <option value="prato-completo">Prato completo</option>
                     <option value="sobremesa">Sobremesa</option>
                     <option value="bebida">Bebida</option>
                     <option value="acompanhamento">Acompanhamento</option>
                 </select>
       
-                <div class="form__container-radio">
+                <div class="form__container-radio ">
                     <h3>Para quantas pessoas?</h3>
 
                     <label for="1pessoa">
-                        <input type="radio" name="num-de-pessoas" id="1pessoa" class="form__input-radio">
+                        <input 
+                        type="radio"
+                        name="num-de-pessoas" 
+                        id="1pessoa"
+                        class="quant-pessoas 
+                        form__input-radio
+                        "
+                        value="1"
+                        >
                         Serve 1 pessoa                    
                     </label>
 
                     <label for="2pessoas">
-                        <input type="radio" name="num-de-pessoas" id="2pessoas class=" class=" form__input-radio">
+                        <input 
+                        type="radio" 
+                        name="num-de-pessoas" 
+                        id="2pessoas class=" 
+                        class="quant-pessoas form__input-radio" 
+                        value="2"
+                        >
                         Serve 2 pessoas
                     </label>
 
                     <label for="familia">
-                        <input type="radio" name="num-de-pessoas" id="familia" class="form__input-radio">
+                        <input 
+                        type="radio" 
+
+                        name="num-de-pessoas" 
+                        
+                        id="familia" 
+
+                        class="quant-pessoas form__input-radio" 
+                        
+                        value="4">
                         Família - até 4 pessoas
                     </label>
                 </div>
     
-                <div class="form__container-radio">
+                <div class="form__container-radio radio-disponibilidade">
                     <h3>Para quantas pessoas?</h3>
                    
                         <label for="disponivel">
-                            <input type="radio" name="disponibilidade" class="form__input-radio" id="disponivel">
+                            <input type="radio" name="disponibilidade"
+
+                             class="disponibilidade form__input-radio"
+
+                             id="disponivel"
+
+                             value="disponível"
+                             >
                             Produto disponível                       
                         </label>
 
                  
                         <label for="indisponivel">
-                            <input type="radio" name="disponibilidade" class="form__input-radio" id="indisponivel">
+                            <input 
+                            type="radio" name="disponibilidade"
+
+                            class="disponibilidade form__input-radio" 
+
+                            id="indisponivel" value="indisponível"
+                            >
                             Produto indisponível
                         </label>                    
                 </div>
-    
-                <button class="form__btn-actions form__btn-actions--next" disabled>Próximo</button>
-    
+  
             </section>
 
             <section class="form__second-step">
@@ -96,7 +132,7 @@
                         <h1>Cadastrar produtos</h1>     
                     </div>
 
-                    <label class="register-title__steps">Etapa 1 de 2</label>
+                    <label class="register-title__steps">Etapa 2 de 2</label>
                 </div>
         
                 <h3 class="second-step__title-upload">Selecione a foto do produto</h3>
@@ -154,12 +190,16 @@
                     </div>
                 </div>               
             </section>
+
+            <button class="form__btn-actions form__btn-actions--next" data-btn-next disabled>Próximo</button>
+            <button type="submit" class="form__btn-actions  form__btn-actions--register" disabled>Cadastrar</button>
         </form>        
-        <button class="form__btn-actions form__btn-actions--register" disabled>Cadastrar</button>
     </main>
 
     <footer>
         2022 | Usemobile. Todos os direitos reservados 
     </footer>
+
+    <script src="../js/form_paginas.js"></script>
 </body>
 </html>
