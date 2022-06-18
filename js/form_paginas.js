@@ -6,6 +6,7 @@ const btnProximaPag = document.querySelector('[data-btn-next]')
 const btnCadastrar = document.querySelector(".form__btn-actions--register")
 const sSecond = document.querySelector(".form__second-step")
 const sFirst = document.querySelector(".form__first-step")
+const imgSeta = document.querySelector("[data-img-seta]")
 
 const validaCampos = _ => {
     const quantEncontrada = quantPessoas.find(quantP => quantP.checked === true)
@@ -16,6 +17,7 @@ const validaCampos = _ => {
     } 
 }
 
+//visibilidade das páginas
 btnProximaPag.addEventListener("click", e => {
     e.preventDefault()
     sFirst.style.display = "none" 
@@ -25,6 +27,14 @@ btnProximaPag.addEventListener("click", e => {
     btnCadastrar.style.display = "block" 
 
 })
+//voltar etapas
+imgSeta.addEventListener("click", _ => {    
+    sFirst.style.display = "flex"
+    sSecond.style.display = "none"
+    btnCadastrar.style.display = "none" 
+    btnProximaPag.style.display = "block" 
 
+})
+//escuta clicks no form
 form.addEventListener("click", validaCampos)
 

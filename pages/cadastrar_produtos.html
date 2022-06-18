@@ -28,7 +28,7 @@
             <section class="form__first-step d-flex">
                 <div class="first-step__title-container">
                     <div class="register-title">
-                        <a href="#">
+                        <a href="../index.html">
                             <img src="../imgs/ic_back.svg" class="register-title__img-back" alt="Ícone voltar para a página anterior">
                         </a>
                         <img src="../imgs/ic_produtos.svg" alt="ícone sacola de compra">
@@ -126,7 +126,7 @@
                 <div class="second-step__title-container">
                     <div class="register-title">
                         <a href="#">
-                            <img src="../imgs/ic_back.svg" class="register-title__img-back" alt="Ícone voltar para a página anterior">
+                            <img src="../imgs/ic_back.svg" class="register-title__img-back" alt="Ícone voltar para a página anterior" data-img-seta>
                         </a>
                         <img src="../imgs/ic_produtos.svg" alt="ícone sacola de compra">
                         <h1>Cadastrar produtos</h1>     
@@ -134,14 +134,19 @@
 
                     <label class="register-title__steps">Etapa 2 de 2</label>
                 </div>
-        
+
                 <h3 class="second-step__title-upload">Selecione a foto do produto</h3>
                 <div class="second-step__uploads-container">
                     <div class="second-step__container-upload--first 
                     second-step__container-uploads">
     
-                        <img src="../imgs/ic_upload.svg" alt="">
-    
+                        <button class="btn-input-file">
+                            <img src="../imgs/ic_upload.svg" alt="Clique para fazer uploads de imagens" class="btn-input-file__image">
+                        </button>
+
+                        <input type="file" class="input-file input-file__first-item">
+
+
                         <p>
                             Anexar foto do produto.
                             <br>
@@ -149,23 +154,24 @@
                         </p>
     
                         <!--
-                            <input type="file" name="cover" id="" class="input-upload__first-item ">
                         -->                     
                     </div>
                         
                     <div class="second-step__container-uploads
                         second-step__container-upload--second
                         ">
-                            <img src="../imgs/ic_upload.svg" alt="">
+                        <button class="btn-input-file">
+                            <img src="../imgs/ic_upload.svg" alt="Clique para fazer uploads de imagens" class="btn-input-file__image">
+                        </button>
     
                             <p>
                                 Anexar foto do produto.
                                 <br>
                                 Se preferir arraste e solte a foto.
                             </p>
+                            <input type="file" name="secondary-image" id="" class="input-file input-upload__second-item">
     
                         <!--
-                            <input type="file" name="secondary-image" id="" class="input-upload__second-item">
                         -->
                             
                     </div>
@@ -173,9 +179,12 @@
                     <div class="second-step__container-uploads
                         second-step__container-upload--third
                         ">
-    
-                                <img src="../imgs/ic_upload.svg" alt="">
-    
+                        
+                        <button class="btn-input-file">
+                            <img src="../imgs/ic_upload.svg" alt="Clique para fazer uploads de imagens" class="btn-input-file__image"">
+                        </button>
+                        <input type="file" name="secondary-image" id="" class="input-file input-upload__third-item">
+                        
                                 <p>
                                     Anexar foto do produto.
                                     <br>
@@ -183,7 +192,6 @@
                                 </p>
     
                                 <!--
-                                    <input type="file" name="secondary-image" id="" class="input-upload__third-item">
                                 -->                
                             
                             
@@ -199,7 +207,7 @@
     <footer>
         2022 | Usemobile. Todos os direitos reservados 
     </footer>
-
+    <script src="../js/upload_files.js"></script>
     <script src="../js/form_paginas.js"></script>
 </body>
 </html>

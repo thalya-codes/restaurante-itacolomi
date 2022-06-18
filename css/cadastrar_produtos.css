@@ -61,15 +61,13 @@
     align-items: center;
     
     margin-bottom: 15px;
-}
 
-.register-title img {
-    margin-right: 5px;
+    position: relative;
 }
 
 .register-title__img-back {
     position:absolute;
-    left: -300px;
+    left: -190px;
     top: -10px
 }
 .register-title__steps {
