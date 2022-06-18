@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/css_variables.css">
+    <link rel="stylesheet" href="../css/produtos_cadastrados.css">
+    <title> Produtos Cadastrados - Restaurante Itacolomi </title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container-title">
+            <img src="../imgs/LOGO.svg" alt="Logotipo do restaurante | Montanha com nome do restaurante abaixo">
+            <p>Olá,Joana</p>
+        </div>
+        <div class="header__container-exit">
+            <img src="../imgs/ic_exit.svg" alt="Ícone de seta apontando para a direita">
+            <a href="#">Sair</a>
+        </div>
+
+    </header>
+    
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="" class="nav__link">Sobremesas</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Bebidas</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Prato completo</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Promoções</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-container">
+        <a href="#" class="search-container__all-products">
+            <img src="../imgs/ic_produtos.svg" alt="ícone sacola de compra">
+            <span>Produtos cadastrados</span>
+        </a>
+        <input type="search" name="search-category" placeholder="Buscar na categoria" class="search-container__input">
+        <select name="search-for-value" class="search__container-select">
+            <option value="ordernar-por">Ordenar por (1)</option>
+            <option value="maior-preco">Maior preço</option>
+            <option value="menor-preco">Menor preço</option>
+        </select>
+    </div>
+
+    <main class="d-flex f-direction-column align-center"></main>
+
+    <footer>
+        2022 | Usemobile. Todos os direitos reservados 
+    </footer>
+    
+    <script src="../js/components/Produtos_Cadastrados.js"></script>
+</body>
+</html>

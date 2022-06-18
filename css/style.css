@@ -46,10 +46,10 @@
     justify-content: space-around;
 
     margin-top: 2rem;
+    list-style-type: none;
 }
 
 .nav__item {
-    list-style-type: none;
     width: calc(80vw / 4);
 
     padding: 8px 0;
