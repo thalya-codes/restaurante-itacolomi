@@ -1,0 +1,23 @@
+{
+  "name": "itacolomi_restaurante",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/save_product.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thalya-codes/restaurante-itacolomi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thalya-codes/restaurante-itacolomi/issues"
+  },
+  "homepage": "https://github.com/thalya-codes/restaurante-itacolomi#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "type": "module"
+}
