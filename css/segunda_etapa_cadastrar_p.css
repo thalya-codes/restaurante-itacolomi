@@ -34,6 +34,8 @@
     box-sizing: border-box;
 
     background-color: var(--neutral-super-light-white);
+
+    position: relative;
 }
 .second-step__container-uploads p {
     line-height: 25px;
@@ -44,12 +46,36 @@
 
     margin-top: 20px;
     margin-bottom: 20px;
+    
 }
+
 .second-step__container-uploads button {
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
+
+.input-file {
+    visibility: hidden;
+}
+.input-file::before {
+    content: "";
+
+    visibility: visible;
+ 
+    background-image: url("../imgs/ic_upload.svg");
+    background-repeat: no-repeat;
+
+    padding: 100px 100px;
+    position: absolute;
+}
+
+.input-file::before {
+    top: 70px;
+    left: 45%;
+}
+
+
 .img-upload-user {
     width: 100%;
     height: 100%;
@@ -65,7 +91,7 @@
 .second-step__container-upload--second, 
 .second-step__container-upload--third {
     width: 25vw;
-    min-height: 45vh;
+    height: 45vh;
     margin-top: 1.3rem;
 }
 
@@ -73,11 +99,36 @@
 .second-step__container-upload--third p {
     font-size: var(--size-14);
 }
+.second-step__container-upload--second p{
+    margin-top: 70px;
+}
 
 .second-step__container-upload--first {
     width: 50vw;
     height: 50vh;
+
     grid-area: first-item;
+
+    position: relative;
+}
+
+.second-step__container-upload--first span {
+    width: 60px;
+    height: 35px;
+    padding: 5px 5px;
+    
+    background-color: var(--neutral-white);
+
+    border: 1px solid var(--secondary-green);
+    border-radius: 10px;
+
+    box-sizing: border-box;
+    
+    position: absolute;
+    top: 30px;
+    left: 20px;
+
+    text-align: center;
 }
 
 .second-step__container-upload--second {
@@ -86,8 +137,6 @@
 .second-step__container-upload--third {
     grid-area: third-item;
 }
-
-
 
 .form__btn-actions--register {
     margin-left: 35%;
