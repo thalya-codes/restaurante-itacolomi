@@ -35,7 +35,6 @@ const validaCampos = e => {
 btnProximaPag.onclick = e => {
     e.preventDefault()
 }
-/*
 btnProximaPag.addEventListener("click", e => {
     e.preventDefault()
 
@@ -50,6 +49,8 @@ btnProximaPag.addEventListener("click", e => {
     
 
 })
+/*
+
 */
 
 //voltar etapas

@@ -91,17 +91,16 @@
 .second-step__container-upload--second, 
 .second-step__container-upload--third {
     width: 25vw;
-    height: 45vh;
+    height: 47vh;
     margin-top: 1.3rem;
 }
 
 .second-step__container-upload--second p ,
 .second-step__container-upload--third p {
     font-size: var(--size-14);
+    margin-top: 100px;
 }
-.second-step__container-upload--second p{
-    margin-top: 70px;
-}
+
 
 .second-step__container-upload--first {
     width: 50vw;
