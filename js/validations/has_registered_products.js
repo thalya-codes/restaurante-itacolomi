@@ -1,4 +1,4 @@
-import {DisplayRegisteredProducts} from "../components/Registered_Products.js"
+import {DisplayRegisteredProducts} from "../components/Resgistered_Products.js"
 
 const HasRegisteredProducts = products => {
     if(products.length === 0 ) {
