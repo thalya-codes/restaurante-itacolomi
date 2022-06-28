@@ -1,10 +1,11 @@
-import HasRegisteredProducts from "../validations/has_registered_products.js";
-import products from "../../data.js";
+import HasRegisteredProducts from "../../validations/has_registered_products.js";
+import products from "../../../data.js";
 const main = document.querySelector("main")
 
 const $Create = document.createElement.bind(document)
 
 export const DisplayRegisteredProducts = () => {
+    const btnResgisterMore = $Create("button")
 
     products.map(product => {
         //create 
@@ -19,7 +20,6 @@ export const DisplayRegisteredProducts = () => {
         const btnContainer =  $Create("div")
         const btnEdit = $Create("button")
         const btnDelete = $Create("button")
-        const btnResgisterMore = $Create("button")
 
 
 
@@ -105,7 +105,7 @@ export const DisplayRegisteredProducts = () => {
             btnDelete
         )
 
-        main.append(divPreviewProdutcs)
+        main.append(divPreviewProdutcs, btnResgisterMore)
     
     })
 
@@ -117,9 +117,7 @@ HasRegisteredProducts(products)
 
 
 
-const RegisterMore = () => {
-    window.location.href = "../../pages/cadastrar_produtos.html"
-}
+
 
 
 
