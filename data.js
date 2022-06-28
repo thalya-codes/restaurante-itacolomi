@@ -6,7 +6,7 @@ const products = [
         img: urlImg, title: "Salada de polvo",
         amount: "Serve 1 pessoa",
         description: "Polvo fresco com legumes refogados (Cenoura, cebola, pimentão, grão de bico e pepino)...",
-        prince: "100.00",
+        price: "100.00",
 
     },
     {
@@ -14,7 +14,7 @@ const products = [
         img: urlImg, title: "Salada de polvo",
         amount: "Serve 1 pessoa",
         description: "Polvo fresco com legumes refogados (Cenoura, cebola, pimentão, grão de bico e pepino)...",
-        prince: "100.00",
+        price: "100.00",
     },
     
 ]

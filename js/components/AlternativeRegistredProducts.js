@@ -1,10 +1,10 @@
-import HasRegisteredProducts from "../validations/has_registered_products.js";
-import products from "../../data.js";
+import products from "../../data.js"
 const main = document.querySelector("main")
 
 const $Create = document.createElement.bind(document)
 
-export const DisplayRegisteredProducts = () => {
+
+const AlternativeRegistredProducts = () => {
 
     products.map(product => {
         //create 
@@ -96,7 +96,6 @@ export const DisplayRegisteredProducts = () => {
         divContainerDescription.append(
             descriptionTitle,
             descriptionAmount,
-            descriptionP,
             descriptionPrice
         )
 
@@ -111,15 +110,4 @@ export const DisplayRegisteredProducts = () => {
 
 }
 
-
-
-HasRegisteredProducts(products)
-
-
-
-const RegisterMore = () => {
-    window.location.href = "../../pages/cadastrar_produtos.html"
-}
-
-
-
+AlternativeRegistredProducts()

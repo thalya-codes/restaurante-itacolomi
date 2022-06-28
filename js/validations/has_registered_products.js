@@ -1,4 +1,5 @@
 import {DisplayRegisteredProducts} from "../components/Resgistered_Products.js"
+import products from "../../data.js"
 
 const HasRegisteredProducts = products => {
     if(products.length === 0 ) {
@@ -7,5 +8,6 @@ const HasRegisteredProducts = products => {
         DisplayRegisteredProducts()
     }
 }
+
 
 export default HasRegisteredProducts

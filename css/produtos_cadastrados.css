@@ -34,6 +34,7 @@ main {
 
 .preview-products__img {
     width: 15%;
+    height: 15%;
     border-radius: 10px;
 }
 
