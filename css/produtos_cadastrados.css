@@ -41,12 +41,21 @@ main {
 .preview-products__container-description {
     width: 35%;
     min-height: 25vh;
+
     font-family: "Open Sans", sans-serif;
 }
 
 .preview-products__title {
     color: var(--primary-terracotta);
     font-size: var(--size-17);
+}
+.preview-products__description {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .preview-products__description , .preview-products__amount, .preview-products__btn {
