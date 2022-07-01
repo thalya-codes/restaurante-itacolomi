@@ -11,7 +11,7 @@ export const DisplayRegisteredProducts = () => {
     main.innerHTML = `
         ${products.map(product => (
             `
-            <div class="preview-products" id=${product.id}>
+            <div class="preview-products container_all-products" id=${product.id}>
                 <div class="d-flex" data-container-preview-products>
                     <img src=${product.img} alt=""
                     class="preview-products__img preview-products__items"

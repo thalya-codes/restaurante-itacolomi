@@ -1,6 +1,9 @@
 body {
     overflow-x: hidden;
 }
+.d-none {
+    display: none;
+}
 
 .d-flex {
     display: flex;

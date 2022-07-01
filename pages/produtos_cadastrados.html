@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/css_variables.css">
     <link rel="stylesheet" href="../css/produtos_cadastrados.css">
+    <link rel="stylesheet" href="../css/cadastrar_produtos.css">
+    <link rel="stylesheet" href="../css/segunda_etapa_cadastrar_p.css">
     <title> Produtos Cadastrados - Restaurante Itacolomi </title>
 </head>
 <body>
@@ -47,11 +49,175 @@
 
     <main class="d-flex f-direction-column align-center">
     </main>
+    
+    <aside>
+        <form class="d-none">
+            
+            <section class="form__first-step d-flex">
+                <div class="first-step__title-container">
+                    <div class="register-title">
+                        <a href="../index.html">
+                            <img src="../imgs/ic_back.svg" class="register-title__img-back" alt="Ícone voltar para a página anterior">
+                        </a>
+                        <img src="../imgs/ic_produtos.svg" alt="ícone sacola de compra">
+                        <h1>Cadastrar produtos</h1>     
+                    </div>
 
+                    <label class="register-title__steps">Etapa 1 de 2</label>
+                </div>
+        
+                <input type="text" class="form__input-text" placeholder="Nome do produto" required data-title>
+                <input type="text" class="form__input-text" placeholder="Descrição" required data-description-product>
+                <input type="number" class="form__input-text" placeholder="Valor (R$)" required  data-price>
+
+                <select name="categoria" class="form__input-text form__input-select select-category" required>                   
+                    <option value="categoria" class="form__input-select--categoria">Categoria</option>
+                    <option value="prato-completo" class="form__input-select-categories">Prato completo</option>
+                    <option value="sobremesa" class="form__input-select-categories">Sobremesa</option>
+                    <option value="bebida" class="form__input-select-categories">Bebida</option>
+                    <option value="acompanhamento"  class="form__input-select-categories">Acompanhamento</option>
+                </select>
+      
+                <div class="form__container-radio ">
+                    <h3>Para quantas pessoas?</h3>
+
+                    <label for="1pessoa">
+                        <input 
+                        type="radio"
+                        name="num-de-pessoas" 
+                        id="1pessoa"
+                        class="quant-pessoas 
+                        form__input-radio
+                        "
+                        value="1"
+
+                        data-amount
+                        >
+                        Serve 1 pessoa                    
+                    </label>
+
+                    <label for="2pessoas">
+                        <input 
+                        type="radio" 
+                        name="num-de-pessoas" 
+                        id="2pessoas" 
+                        class="quant-pessoas form__input-radio" 
+                        value="2"
+                        data-amount
+                        >
+                        Serve 2 pessoas
+                    </label>
+
+                    <label for="familia">
+                        <input 
+                        type="radio" 
+
+                        name="num-de-pessoas" 
+                        
+                        id="familia" 
+
+                        class="quant-pessoas form__input-radio" 
+                        
+                        value="4"
+                        data-amount
+                        >
+                        Família - até 4 pessoas
+                    </label>
+                </div>
+    
+                <div class="form__container-radio radio-disponibilidade">
+                    <h3>Para quantas pessoas?</h3>
+                   
+                        <label for="disponivel">
+                            <input type="radio" name="disponibilidade"
+
+                             class="disponibilidade form__input-radio"
+
+                             id="disponivel"
+
+                             value="produto-disponivel"
+                             >
+                            Produto disponível                       
+                        </label>
+
+                 
+                        <label for="indisponivel">
+                            <input 
+                            type="radio" name="disponibilidade"
+
+                            class="disponibilidade form__input-radio" 
+
+                            id="indisponivel" value="produto-indisponivel"
+                            >
+                            Produto indisponível
+                        </label>                    
+                </div>
+  
+            </section>
+
+            <section class="form__second-step">
+                <div class="second-step__title-container">
+                    <div class="register-title">
+                        <a href="#">
+                            <img src="../imgs/ic_back.svg" class="register-title__img-back" alt="Ícone voltar para a página anterior" data-img-seta>
+                        </a>
+                        <img src="../imgs/ic_produtos.svg" alt="ícone sacola de compra">
+                        <h1>Cadastrar produtos</h1>     
+                    </div>
+
+                    <label class="register-title__steps">Etapa 2 de 2</label>
+                </div>
+
+                <h3 class="second-step__title-upload">Selecione a foto do produto</h3>
+                <div class="second-step__uploads-container">
+                    <div class="second-step__container-upload--first 
+                    second-step__container-uploads"> 
+                        <span>Capa</span>
+                        <input type="file" class="input-file input-file__first-item">
+
+                        <p>
+                            Anexar foto do produto.
+                            <br>
+                            Se preferir arraste e solte a foto.
+                        </p>               
+                    </div>
+                        
+                    <div class="second-step__container-uploads
+                        second-step__container-upload--second
+                        ">
+                   
+                            <p>
+                                Anexar foto do produto.
+                                <br>
+                                Se preferir arraste e solte a foto.
+                            </p>
+                            <input type="file" name="secondary-image" id="" class="input-file input-upload__second-item">
+                            
+                    </div>
+    
+                    <div class="second-step__container-uploads
+                        second-step__container-upload--third
+                        ">
+                        <input type="file" name="secondary-image" id="" class="input-file input-upload__third-item">
+                        
+                                <p>
+                                    Anexar foto do produto.
+                                    <br>
+                                    Se preferir arraste e solte a foto.
+                                </p>                           
+                    </div>
+                </div>               
+            </section>
+
+            <button class="form__btn-actions form__btn-actions--next" data-btn-next disabled>Próximo</button>
+            <button type="submit" class="form__btn-actions  form__btn-actions--register" disabled>Cadastrar</button>
+        </form>
+    </aside>
     <footer>
         2022 | Usemobile. Todos os direitos reservados 
     </footer>
     <script type="module" src="../js/components/Resgistered_Products/Resgistered_Products.js"></script>
     <script type="module" src="../js/components/Resgistered_Products/actions/RegisterMore.js"></script>  
+    <script type="module" src="../js/components/Resgistered_Products/actions/EditProducts.js"></script>
 </body>
 </html>
