@@ -8,7 +8,7 @@ const products = [
         description: "Polvo fresco com legumes refogados (Cenoura, cebola, pimentão, grão de bico e pepino)...",
         price: 100.00,
         disponibility: false,
-        category: "Prato completo"
+        category: "Sobremesa"
     },
     {
         id:  1,

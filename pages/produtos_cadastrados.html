@@ -56,7 +56,7 @@
             <section class="form__first-step d-flex">
                 <div class="first-step__title-container">
                     <div class="register-title">
-                        <a href="../index.html">
+                        <a data-to-go-back>
                             <img src="../imgs/ic_back.svg" class="register-title__img-back" alt="Ícone voltar para a página anterior">
                         </a>
                         <img src="../imgs/ic_produtos.svg" alt="ícone sacola de compra">
@@ -66,16 +66,16 @@
                     <label class="register-title__steps">Etapa 1 de 2</label>
                 </div>
         
-                <input type="text" class="form__input-text" placeholder="Nome do produto" required data-title>
-                <input type="text" class="form__input-text" placeholder="Descrição" required data-description-product>
-                <input type="number" class="form__input-text" placeholder="Valor (R$)" required  data-price>
+                <input type="text" class="form__input-text" placeholder="Nome do produto"  data-title required>
+                <input type="text" class="form__input-text" placeholder="Descrição"  data-description-product required>
+                <input type="number" class="form__input-text" placeholder="Valor (R$)"   data-price required>
 
-                <select name="categoria" class="form__input-text form__input-select select-category" required>                   
-                    <option value="categoria" class="form__input-select--categoria">Categoria</option>
-                    <option value="prato-completo" class="form__input-select-categories">Prato completo</option>
-                    <option value="sobremesa" class="form__input-select-categories">Sobremesa</option>
-                    <option value="bebida" class="form__input-select-categories">Bebida</option>
-                    <option value="acompanhamento"  class="form__input-select-categories">Acompanhamento</option>
+                <select name="categories" class="form__input-text form__input-select select-category" >                   
+                    <option value="categoria"   class="form__input-select--categoria" data-select-categories disabled>Categoria</option>
+                    <option value="Prato completo"  class="form__input-select-categories" data-select-categories>Prato completo</option>
+                    <option value="Sobremesa" class="form__input-select-categories" data-select-categories>Sobremesa</option>
+                    <option value="Bebida" class="form__input-select-categories" data-select-categories>Bebida</option>
+                    <option value="Acompanhamento"  class="form__input-select-categories" data-select-categories>Acompanhamento</option>
                 </select>
       
                 <div class="form__container-radio ">
@@ -209,15 +209,18 @@
                 </div>               
             </section>
 
-            <button class="form__btn-actions form__btn-actions--next" data-btn-next disabled>Próximo</button>
+            <button class="form__btn-actions form__btn-actions--next" disabled data-btn-next>Próximo</button>
             <button type="submit" class="form__btn-actions  form__btn-actions--register" disabled>Cadastrar</button>
         </form>
     </aside>
     <footer>
         2022 | Usemobile. Todos os direitos reservados 
     </footer>
+    <script type="module" src="../js/validations/form_validation.js"></script>
     <script type="module" src="../js/components/Resgistered_Products/Resgistered_Products.js"></script>
     <script type="module" src="../js/components/Resgistered_Products/actions/RegisterMore.js"></script>  
+    <script type="module" src="../js/validations/form_validation.js"></script>
     <script type="module" src="../js/components/Resgistered_Products/actions/EditProducts.js"></script>
+    
 </body>
 </html>
